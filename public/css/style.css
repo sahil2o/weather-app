@@ -1,0 +1,150 @@
+body {
+  width: auto;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  background: url(../images/pexels-brett-sayles-912364.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  z-index: 3;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-width: 500px;
+  margin: 0 auto;
+  background: rgba(19, 19, 19, 0.2);
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 50px;
+  z-index: 3;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 20px;
+  z-index: 3;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-width: 500px;
+  height: fit-content;
+  margin: 0 auto;
+  background: rgba(19, 19, 19, 0.2);
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #000;
+  border-top: 0px;
+  z-index: 3;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  z-index: 3;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.h p {
+  text-transform: none;
+}
+
+.input {
+  display: block;
+  font-weight: 300;
+  width: 100%;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  background-color: transparent;
+  font-family: Open Sans, Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  border-radius: 50px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  width: 100%;
+  min-width: 350px;
+  border-radius: 50px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ghost-button:hover {
+  border: 1px solid #515151;
+  background: rgba(0, 0, 0, 0.453);
+}
+
+p {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+  text-align: center;
+}

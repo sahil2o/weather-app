@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <title>Weather-App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="title-top">
+        <div class="title">
+          <h1>Weather</h1>
+        </div>
+      </header>
+      <div class="form-card">
+        <fieldset>
+          <form action="/" method="post">
+            <input
+              name="city"
+              type="text"
+              class="input"
+              placeholder="Enter a City"
+              required
+            />
+            <input type="submit" class="button" value="Get Weather" />
+          </form>
+        </fieldset>
+      </div>
+      <%if( weather !== null){ %>
+      <div class="weather-card">
+        <div class="place"><h1><%= place %></h1></div>
+        <div class="result">
+          <div class="items">
+            <h3>Temperature</h3>
+            <div class="item-data">
+              <p><%= temp %>°C</p>
+            </div>
+          </div>
+          <div class="items">
+            <h3>Description</h3>
+            <div class="item-data">
+              <img src="<%= icon %>" alt="Weather-Icon" />
+              <p><%= description %></p>
+            </div>
+          </div>
+          <div class="items">
+            <h3>Humidity</h3>
+            <div class="item-data h">
+              <p><%= humidity %>g/m<sup>3</sup></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% } %> <% if(error !== null){ %>
+      <p><%= error %></p>
+      <% } %>
+    </div>
+  </body>
+</html>
+
+<!-- api from openweathermap https://openweathermap.org/api -->
