@@ -133,7 +133,7 @@ fieldset {
   transition: all 0.1s ease-in-out;
 }
 
-button:hover {
+.button:hover {
   border: 1px solid #515151;
   background: rgba(0, 0, 0, 0.453);
 }
